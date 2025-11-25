@@ -3,6 +3,21 @@
 Project Details:
 In this study, we experimented with several neural network architectures and analyzed their training times. Based on these experiments, we selected the best-performing neural networks to be used exclusively for feature extraction. The extracted features were then employed to train a boosting model, Extreme Gradient Boosting (XGBoost), to evaluate training time efficiency, parameter count, and overall performance in comparison to the original neural networks. Our results indicate that XGBoost models trained on features extracted from VGG19, ResNet50, and EfficientNetB0 performed exceptionally well compared to the neural networks, with some models also showing reductions in both training time and parameter count. To further validate these observations, we are exploring additional boosting models, including RUSBoost, AdaBoost, CatBoost, Gradient Boosting Machine (GBM), and Light Gradient Boosting Machine (LGBM). The primary aim of this work is to identify the most efficient models in terms of performance, training time, and parameter efficiency. Once identified, these custom efficient models will be applied in a federated learning (FL) setting to assess their time efficiency and overall performance across 10 clients. We plan to evaluate these models with multiple FL algorithms, including FedAvg, FedProx, FedOpt, Q-FedAvg, and FedNova. Currently, initial experiments using FedAvg with base neural networks have been conducted, and the next phase will involve testing the customized efficient models to compare their performance, training time, and parameter usage against traditional neural networks in a federated environment.
 
+Results:
+
+### Base Models
+<img width="1684" height="428" alt="image" src="https://github.com/user-attachments/assets/4c6ae404-4770-4840-8cd8-c46315935422" />
+
+### Custom + ML (XGBoost)
+<img width="1752" height="373" alt="image" src="https://github.com/user-attachments/assets/cd9347ee-1aff-4663-a01c-e7673dd8bea8" />
+
+### Base FL (FedAvg)
+<img width="1360" height="237" alt="image" src="https://github.com/user-attachments/assets/926108bf-bded-48db-9909-30a306e1638a" />
+
+
+
+
+
 This repository contains a structured set of experiments focused on binary image classification for skin cancer diagnosis (Benign vs. Malignant).  
 The project investigates three major analytical directions:
 
