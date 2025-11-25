@@ -1,0 +1,1 @@
+This folder is maintained for future experiments with new image classification datasets.
